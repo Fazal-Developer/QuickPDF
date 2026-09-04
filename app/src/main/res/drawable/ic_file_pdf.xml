@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Document background sheet -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M14,2H6C4.9,2 4,2.9 4,4V20C4,21.1 4.9,22 6,22H18C19.1,22 20,21.1 20,20V8L14,2Z"/>
+    <!-- Folded paper fold -->
+    <path
+        android:fillColor="#CFD8DC"
+        android:pathData="M14,2V8H20L14,2Z"/>
+    <!-- PDF Text/Logo banner background -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M6,12H18V17H6V12Z"/>
+    <!-- PDF Text cutout representation (simulated line markings inside red banner) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,13.5H9.5V14.5H8V13.5ZM11,13.5H13V14.5H11V13.5ZM14.5,13.5H16V14.5H14.5V13.5ZM8,15H16V15.8H8V15ZM8,16.2H12V16.8H8V16.2Z"/>
+</vector>

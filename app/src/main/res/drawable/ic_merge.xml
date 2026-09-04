@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- First sheet -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M14,2H6C4.9,2 4,2.9 4,4V20C4,21.1 4.9,22 6,22H14V20H6V4H13V9H18V12H20V8L14,2Z"/>
+    <!-- Folded corner for first sheet -->
+    <path
+        android:fillColor="#B71C1C"
+        android:pathData="M14,2V9H19L14,2Z"/>
+    <!-- Second sheet shifted with merge indicator -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M16,14H20C21.1,14 22,14.9 22,16V22C22,23.1 21.1,24 20,24H16C14.9,24 14,23.1 14,22V16C14,14.9 14.9,14 16,14Z"/>
+    <!-- Plus/Merge symbol inside the overlap -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M17.5,19H18.5V17.5H20V16.5H18.5V15H17.5V16.5H16V17.5H17.5V19Z"/>
+</vector>

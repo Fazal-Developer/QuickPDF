@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Document outline -->
+    <path
+        android:fillColor="#D84315"
+        android:pathData="M14,2H6C4.9,2 4.01,2.9 4.01,4L4,20c0,1.1 0.89,2 1.99,2H18c1.1,0 2,-0.9 2,-2V8L14,2zM13,9V3.5L18.5,9H13z"/>
+    <!-- Pie Chart Slide Presentation -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,11c-2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4 -1.79,-4 -4,-4zM12.5,12.05c1.47,0.22 2.63,1.38 2.85,2.85h-2.85v-2.85z"/>
+</vector>

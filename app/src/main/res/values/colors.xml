@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors — Modern Purple/Violet -->
+    <color name="colorPrimary">#6C5CE7</color>
+    <color name="colorPrimaryDark">#5A4BD1</color>
+    <color name="colorPrimaryVariant">#A29BFE</color>
+    <color name="colorSecondary">#00B894</color>
+    <color name="colorSecondaryVariant">#55EFC4</color>
+    <color name="colorAccent">#6C5CE7</color>
+
+    <!-- Background Colors -->
+    <color name="backgroundColor">#F8F9FD</color>
+    <color name="backgroundColorDark">#1A1A2E</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="surfaceColorDark">#222244</color>
+    <color name="cardColor">#FFFFFF</color>
+    <color name="cardColorDark">#2D2D52</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#2D3436</color>
+    <color name="textSecondary">#636E72</color>
+    <color name="textPrimaryDark">#F0F0F0</color>
+    <color name="textSecondaryDark">#A0A0B0</color>
+
+    <!-- Tool Card Colors -->
+    <color name="mergeColor">#6C5CE7</color>
+    <color name="splitColor">#0984E3</color>
+    <color name="compressColor">#00B894</color>
+    <color name="imageToPdfColor">#F59E0B</color>
+    <color name="securityColor">#6366F1</color>
+    <color name="watermarkColor">#EC4899</color>
+    <color name="viewerColor">#8B5CF6</color>
+    <color name="recentColor">#0EA5E9</color>
+
+    <!-- Tool Icon Background Tints (soft pastels) -->
+    <color name="mergeTint">#F0EDFF</color>
+    <color name="splitTint">#E8F4FD</color>
+    <color name="compressTint">#E6F9F3</color>
+    <color name="imageToPdfTint">#FEF3E2</color>
+    <color name="securityTint">#EEF0FF</color>
+    <color name="watermarkTint">#FDE8F3</color>
+    <color name="viewerTint">#F0ECFE</color>
+    <color name="recentTint">#E6F6FD</color>
+    <color name="wordToPdfTint">#E8F0FE</color>
+    <color name="excelToPdfTint">#E6F9F3</color>
+    <color name="pptToPdfTint">#FEF0E6</color>
+    <color name="textToPdfTint">#F0ECFE</color>
+    <color name="pdfToTextTint">#EDF2F4</color>
+    <color name="pdfToImageTint">#FDE8F0</color>
+    <color name="removeWmTint">#FEF0E6</color>
+
+    <!-- Convert Tool Colors -->
+    <color name="wordToPdfColor">#3B82F6</color>
+    <color name="excelToPdfColor">#10B981</color>
+    <color name="pptToPdfColor">#F97316</color>
+    <color name="textToPdfColor">#8B5CF6</color>
+    <color name="pdfToTextColor">#636E72</color>
+    <color name="pdfToImageColor">#EC4899</color>
+    <color name="removeWmColor">#E17055</color>
+
+    <!-- Tool Gradient Colors (now subtle, same-hue) -->
+    <color name="mergeGradientStart">#6C5CE7</color>
+    <color name="mergeGradientEnd">#5A4BD1</color>
+    <color name="splitGradientStart">#0984E3</color>
+    <color name="splitGradientEnd">#0770C2</color>
+    <color name="compressGradientStart">#00B894</color>
+    <color name="compressGradientEnd">#00A080</color>
+    <color name="imageToPdfGradientStart">#F59E0B</color>
+    <color name="imageToPdfGradientEnd">#D98E0A</color>
+    <color name="viewerGradientStart">#8B5CF6</color>
+    <color name="viewerGradientEnd">#7C3AED</color>
+    <color name="recentGradientStart">#0EA5E9</color>
+    <color name="recentGradientEnd">#0284C7</color>
+
+    <!-- Misc -->
+    <color name="dividerColor">#EDF0F7</color>
+    <color name="cardBorderColor">#EDF0F7</color>
+    <color name="rippleColor">#1A6C5CE7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="statusBarColor">#F8F9FD</color>
+    <color name="navigationBarColor">#FFFFFF</color>
+
+    <!-- Greeting banner -->
+    <color name="greetingSubtitle">#636E72</color>
+
+    <!-- Bottom nav -->
+    <color name="bottomNavInactive">#B2BEC3</color>
+</resources>

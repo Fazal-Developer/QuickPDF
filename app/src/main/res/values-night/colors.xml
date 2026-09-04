@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode overrides -->
+    <color name="backgroundColor">#1A1A2E</color>
+    <color name="surfaceColor">#222244</color>
+    <color name="cardColor">#2D2D52</color>
+    <color name="textPrimary">#F0F0F0</color>
+    <color name="textSecondary">#A0A0B0</color>
+    <color name="dividerColor">#3A3A5C</color>
+    <color name="cardBorderColor">#3A3A5C</color>
+    <color name="statusBarColor">#1A1A2E</color>
+    <color name="navigationBarColor">#1A1A2E</color>
+    <color name="greetingSubtitle">#A0A0B0</color>
+    <color name="bottomNavInactive">#6C6C8A</color>
+    <color name="rippleColor">#1AA29BFE</color>
+
+    <!-- Dark tool tints (deeper) -->
+    <color name="mergeTint">#2D2B5E</color>
+    <color name="splitTint">#1B2D4E</color>
+    <color name="compressTint">#1B3D35</color>
+    <color name="imageToPdfTint">#3D3420</color>
+    <color name="securityTint">#2B2D5E</color>
+    <color name="watermarkTint">#3D1B30</color>
+    <color name="viewerTint">#2D2550</color>
+    <color name="recentTint">#1B304E</color>
+    <color name="wordToPdfTint">#1B2D4E</color>
+    <color name="excelToPdfTint">#1B3D35</color>
+    <color name="pptToPdfTint">#3D2B1B</color>
+    <color name="textToPdfTint">#2D2550</color>
+    <color name="pdfToTextTint">#2D3436</color>
+    <color name="pdfToImageTint">#3D1B2D</color>
+    <color name="removeWmTint">#3D2B20</color>
+</resources>

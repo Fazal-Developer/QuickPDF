@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hhhdeveloper.swiftpdf.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.hhhdeveloper.swiftpdf.ui.tools.ToolsFragment"
+        android:label="PDF Tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_files"
+        android:name="com.hhhdeveloper.swiftpdf.ui.recent.RecentFilesFragment"
+        android:label="My Files"
+        tools:layout="@layout/fragment_recent_files" />
+
+    <fragment
+        android:id="@+id/nav_merge"
+        android:name="com.hhhdeveloper.swiftpdf.ui.merge.MergeFragment"
+        android:label="@string/merge_pdf"
+        tools:layout="@layout/fragment_merge" />
+
+    <fragment
+        android:id="@+id/nav_split"
+        android:name="com.hhhdeveloper.swiftpdf.ui.split.SplitFragment"
+        android:label="@string/split_pdf"
+        tools:layout="@layout/fragment_split" />
+
+    <fragment
+        android:id="@+id/nav_compress"
+        android:name="com.hhhdeveloper.swiftpdf.ui.compress.CompressFragment"
+        android:label="@string/compress_pdf"
+        tools:layout="@layout/fragment_compress" />
+
+    <fragment
+        android:id="@+id/nav_image_to_pdf"
+        android:name="com.hhhdeveloper.swiftpdf.ui.imagetopdf.ImageToPdfFragment"
+        android:label="@string/image_to_pdf"
+        tools:layout="@layout/fragment_image_to_pdf" />
+
+    <fragment
+        android:id="@+id/nav_recent"
+        android:name="com.hhhdeveloper.swiftpdf.ui.recent.RecentFilesFragment"
+        android:label="@string/recent_files"
+        tools:layout="@layout/fragment_recent_files" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.hhhdeveloper.swiftpdf.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_security"
+        android:name="com.hhhdeveloper.swiftpdf.ui.security.SecurityFragment"
+        android:label="@string/pdf_security"
+        tools:layout="@layout/fragment_security" />
+
+    <fragment
+        android:id="@+id/nav_watermark"
+        android:name="com.hhhdeveloper.swiftpdf.ui.watermark.WatermarkFragment"
+        android:label="@string/pdf_watermark"
+        tools:layout="@layout/fragment_watermark" />
+
+    <fragment
+        android:id="@+id/nav_word_to_pdf"
+        android:name="com.hhhdeveloper.swiftpdf.ui.convert.BaseConvertFragment"
+        android:label="Word to PDF"
+        tools:layout="@layout/fragment_convert">
+        <argument
+            android:name="type"
+            android:defaultValue="WORD"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_excel_to_pdf"
+        android:name="com.hhhdeveloper.swiftpdf.ui.convert.BaseConvertFragment"
+        android:label="Excel to PDF"
+        tools:layout="@layout/fragment_convert">
+        <argument
+            android:name="type"
+            android:defaultValue="EXCEL"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ppt_to_pdf"
+        android:name="com.hhhdeveloper.swiftpdf.ui.convert.BaseConvertFragment"
+        android:label="PPT to PDF"
+        tools:layout="@layout/fragment_convert">
+        <argument
+            android:name="type"
+            android:defaultValue="PPT"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_text_to_pdf"
+        android:name="com.hhhdeveloper.swiftpdf.ui.convert.BaseConvertFragment"
+        android:label="Text to PDF"
+        tools:layout="@layout/fragment_convert">
+        <argument
+            android:name="type"
+            android:defaultValue="TXT"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pdf_to_text"
+        android:name="com.hhhdeveloper.swiftpdf.ui.convert.BaseConvertFragment"
+        android:label="PDF to Text"
+        tools:layout="@layout/fragment_convert">
+        <argument
+            android:name="type"
+            android:defaultValue="PDF_TO_TXT"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pdf_to_image"
+        android:name="com.hhhdeveloper.swiftpdf.ui.convert.BaseConvertFragment"
+        android:label="PDF to Image"
+        tools:layout="@layout/fragment_convert">
+        <argument
+            android:name="type"
+            android:defaultValue="PDF_TO_IMG"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_remove_watermark"
+        android:name="com.hhhdeveloper.swiftpdf.ui.watermark.RemoveWatermarkFragment"
+        android:label="Remove Watermark"
+        tools:layout="@layout/fragment_remove_watermark" />
+
+    <fragment
+        android:id="@+id/nav_cv_maker"
+        android:name="com.hhhdeveloper.swiftpdf.ui.cv.CvLandingFragment"
+        android:label="CV Builder"
+        tools:layout="@layout/fragment_cv_landing" />
+
+    <fragment
+        android:id="@+id/nav_cv_landing"
+        android:name="com.hhhdeveloper.swiftpdf.ui.cv.CvLandingFragment"
+        android:label="CV Builder"
+        tools:layout="@layout/fragment_cv_landing" />
+
+    <fragment
+        android:id="@+id/nav_cv_template_gallery"
+        android:name="com.hhhdeveloper.swiftpdf.ui.cv.CvTemplateGalleryFragment"
+        android:label="Template Gallery"
+        tools:layout="@layout/fragment_cv_template_gallery" />
+
+    <fragment
+        android:id="@+id/nav_cv_builder_steps"
+        android:name="com.hhhdeveloper.swiftpdf.ui.cv.CvBuilderStepsFragment"
+        android:label="Build Your CV"
+        tools:layout="@layout/fragment_cv_builder_steps" />
+
+</navigation>

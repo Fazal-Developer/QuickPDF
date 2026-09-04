@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SwiftPDF</string>
+    <string name="settings">Ajustes</string>
+    <string name="dark_mode">Modo Oscuro</string>
+    <string name="dark_mode_desc">Cambiar al tema oscuro</string>
+    <string name="rate_app">Califica esta App</string>
+    <string name="rate_app_desc">¿Te encanta SwiftPDF? ¡Califícanos con 5 estrellas!</string>
+    <string name="share_app">Compartir App</string>
+    <string name="about">Acerca de SwiftPDF</string>
+    <string name="about_desc">Versión 1.0.0 • Hecho con ♥</string>
+    <string name="output_folder">Carpeta de salida</string>
+    <string name="output_folder_desc">Donde se guardan los archivos procesados</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_recent">Recientes</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="app_language">Idioma de la aplicación</string>
+    <string name="app_language_desc">Selecciona tu idioma preferido</string>
+    <string name="clear_cache">Borrar caché temporal</string>
+    <string name="cache_calculating">Caché: Calculando…</string>
+    <string name="help_faq">Ayuda y preguntas frecuentes</string>
+    <string name="help_faq_desc">Guías de usuario y preguntas frecuentes</string>
+</resources>

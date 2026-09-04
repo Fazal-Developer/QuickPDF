@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Folder/Document -->
+    <path
+        android:fillColor="#00ACC1"
+        android:pathData="M14,2H6C4.9,2 4,2.9 4,4V20C4,21.1 4.9,22 6,22H13V20H6V4H13V9H18V13H20V8L14,2ZM13,9V2L18,7H13V9Z"/>
+    <!-- Clock circle -->
+    <path
+        android:fillColor="#00ACC1"
+        android:pathData="M18,15C15.8,15 14,16.8 14,19C14,21.2 15.8,23 18,23C20.2,23 22,21.2 22,19C22,16.8 20.2,15 18,15ZM18,21.5C16.6,21.5 15.5,20.4 15.5,19C15.5,17.6 16.6,16.5 18,16.5C19.4,16.5 20.5,17.6 20.5,19C20.5,20.4 19.4,21.5 18,21.5Z"/>
+    <!-- Clock hands -->
+    <path
+        android:fillColor="#00ACC1"
+        android:pathData="M17.5,17H18.5V19.2L20.2,20.2L19.7,21L17.5,19.7V17Z"/>
+</vector>

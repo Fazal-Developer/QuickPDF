@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF Tools"
+            android:textColor="@color/textPrimary"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Everything you need for your documents"
+            android:textColor="@color/textSecondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Tools scroll list -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- ===== SECTION: Core Tools ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Core Tools"
+                android:textColor="@color/textSecondary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.08" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:paddingHorizontal="8dp">
+
+                <!-- CV Maker -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_cv_maker"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="#1A6C5CE7">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_cv_maker" app:tint="@color/colorPrimary" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="CV Maker"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Build Resume"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Merge PDF -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_merge"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/mergeTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_merge" app:tint="@color/mergeColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Merge PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Combine PDFs"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Images to PDF -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_image_to_pdf"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/imageToPdfTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_image_to_pdf" app:tint="@color/imageToPdfColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Images to PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Start new PDF"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- PDF to Image -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_pdf_to_image"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/pdfToImageTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_pdf_to_image" app:tint="@color/pdfToImageColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="PDF to Image"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Export images"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Split PDF -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_split"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/splitTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_split" app:tint="@color/splitColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Split PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Extract pages"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Compress PDF -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_compress"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/compressTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_compress" app:tint="@color/compressColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Compress PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Reduce file size"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Protect PDF -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_security"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/securityTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_lock" app:tint="@color/securityColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Protect PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Set password"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Unlock PDF -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_unlock"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/securityTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_unlock" app:tint="@color/compressColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Unlock PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Remove password"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Watermark -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_watermark"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/watermarkTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_watermark" app:tint="@color/watermarkColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Add Watermark"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Add text mark"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Remove Watermark -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_remove_watermark"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/removeWmTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_remove_watermark" app:tint="@color/removeWmColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Raster Pages"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Add signature"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" android:maxLines="1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+            <!-- ===== SECTION: Convert ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Convert"
+                android:textColor="@color/textSecondary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.08" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:paddingHorizontal="8dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_word_to_pdf"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/wordToPdfTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_word_to_pdf" app:tint="@color/wordToPdfColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Word to PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="DOC → PDF"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_excel_to_pdf"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/excelToPdfTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_excel_to_pdf" app:tint="@color/excelToPdfColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Excel to PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="XLS → PDF"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_ppt_to_pdf"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/pptToPdfTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_ppt_to_pdf" app:tint="@color/pptToPdfColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="PPT to PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="PPT → PDF"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_text_to_pdf"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/textToPdfTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_text_to_pdf" app:tint="@color/textToPdfColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Text to PDF"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="TXT → PDF"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tool_pdf_to_text"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_columnWeight="1" android:layout_margin="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="2dp" app:strokeWidth="0dp"
+                    android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center" android:padding="16dp">
+                        <FrameLayout android:layout_width="48dp" android:layout_height="48dp"
+                            android:background="@drawable/bg_circle" android:backgroundTint="@color/pdfToTextTint">
+                            <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_tool_pdf_to_text" app:tint="@color/pdfToTextColor" />
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="PDF to Text"
+                            android:textColor="@color/textPrimary" android:textSize="11sp"
+                            android:fontFamily="sans-serif-medium" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Extract text"
+                            android:textColor="@color/textSecondary" android:textSize="10sp" android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

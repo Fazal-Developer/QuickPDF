@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA">
+
+    <!-- ====== TOP BAR: White header matching reference screenshot ====== -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        app:elevation="0dp"
+        app:titleTextColor="#2D3436"
+        app:navigationIcon="@drawable/ic_chevron_right" />
+
+    <!-- ====== VIEWER FRAME: Floating document card on soft background ====== -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F6FA">
+
+        <!-- Document Card Container — matches reference floating page card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdf_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Search Card Overlay -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/et_pdf_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Search text in PDF..."
+                    android:textColor="#2D3436"
+                    android:textColorHint="#95A5A6"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch" />
+
+                <TextView
+                    android:id="@+id/tv_match_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:text="0/0"
+                    android:textColor="#636E72"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <ImageButton
+                    android:id="@+id/btn_prev_match"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@android:drawable/arrow_up_float"
+                    app:tint="#2D3436"
+                    android:contentDescription="Previous Match" />
+
+                <ImageButton
+                    android:id="@+id/btn_next_match"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@android:drawable/arrow_down_float"
+                    app:tint="#2D3436"
+                    android:contentDescription="Next Match" />
+
+                <ImageButton
+                    android:id="@+id/btn_close_search"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    app:tint="#636E72"
+                    android:contentDescription="Close Search" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ====== FLOATING PAGE CONTROLLER (Middle Bottom, matches reference screenshot) ====== -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Far Left Jump Button -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_first_page"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_right"
+                    android:rotation="180"
+                    app:tint="#2D3436" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Center Pill: <  5 / 24  > (Matches reference exactly) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_page_control"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginHorizontal="12dp"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="12dp">
+
+                    <ImageView
+                        android:id="@+id/btn_prev_page"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:rotation="180"
+                        app:tint="#2D3436"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:id="@+id/tv_page_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:text="1 / 1"
+                        android:textColor="#2D3436"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-bold" />
+
+                    <ImageView
+                        android:id="@+id/btn_next_page"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="#2D3436"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Far Right Jump Button -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_last_page"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="#2D3436" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- ====== BOTTOM ACTION TOOLBAR: Matches reference screenshot bottom bar ====== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Thumbnail Action -->
+        <LinearLayout
+            android:id="@+id/btn_bottom_thumbnail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_nav_home"
+                app:tint="#2D3436" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Thumbnail"
+                android:textColor="#2D3436"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Search Action -->
+        <LinearLayout
+            android:id="@+id/btn_bottom_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#2D3436" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Search"
+                android:textColor="#2D3436"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Share Action -->
+        <LinearLayout
+            android:id="@+id/btn_bottom_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_menu_share"
+                app:tint="#2D3436" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Share"
+                android:textColor="#2D3436"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- More Action -->
+        <LinearLayout
+            android:id="@+id/btn_bottom_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_menu_more"
+                app:tint="#2D3436" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="More"
+                android:textColor="#2D3436"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

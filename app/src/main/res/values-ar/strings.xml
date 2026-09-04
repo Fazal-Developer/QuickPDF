@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SwiftPDF</string>
+    <string name="settings">الإعدادات</string>
+    <string name="dark_mode">الوضع الداكن</string>
+    <string name="dark_mode_desc">التبديل إلى المظهر الداكن</string>
+    <string name="rate_app">تقييم التطبيق</string>
+    <string name="rate_app_desc">هل أعجبك SwiftPDF؟ قيمنا بـ 5 نجوم!</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="about">حول SwiftPDF</string>
+    <string name="about_desc">الإصدار 1.0.0 • صنع بكل حب ♥</string>
+    <string name="output_folder">مجلد المخرجات</string>
+    <string name="output_folder_desc">مكان حفظ الملفات المعالجة</string>
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_recent">الأخيرة</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="app_language">لغة التطبيق</string>
+    <string name="app_language_desc">اختر لغتك المفضلة</string>
+    <string name="clear_cache">مسح التخزين المؤقت</string>
+    <string name="cache_calculating">التخزين المؤقت: جاري الحساب…</string>
+    <string name="help_faq">المساعدة والأسئلة الشائعة</string>
+    <string name="help_faq_desc">دليل المستخدم والأسئلة الأكثر شيوعاً</string>
+</resources>

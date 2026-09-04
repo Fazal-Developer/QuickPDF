@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Drag handle grabber dots -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M9,8H11V10H9V8ZM9,12H11V14H9V12ZM9,16H11V18H9V16ZM13,8H15V10H13V8ZM13,12H15V14H13V12ZM13,16H15V18H13V16Z"/>
+</vector>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Page Thumbnail -->
+        <ImageView
+            android:id="@+id/iv_page_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="#EEEEEE" />
+
+        <!-- Page Index Badge -->
+        <TextView
+            android:id="@+id/tv_page_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/bg_badge_gray"
+            android:text="Page 1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Delete Overlay Button -->
+        <ImageView
+            android:id="@+id/btn_delete_page"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:padding="8dp"
+            android:background="@drawable/bg_circle_delete"
+            app:tint="@color/white"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

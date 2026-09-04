@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SwiftPDF</string>
+    <string name="settings">ترتیبات</string>
+    <string name="dark_mode">ڈارک موڈ</string>
+    <string name="dark_mode_desc">ڈارک تھیم پر جائیں</string>
+    <string name="rate_app">ایپ کی درجہ بندی کریں</string>
+    <string name="rate_app_desc">SwiftPDF پسند آیا؟ ہمیں 5 اسٹار ریٹ کریں!</string>
+    <string name="share_app">ایپ شیئر کریں</string>
+    <string name="about">SwiftPDF کے بارے میں</string>
+    <string name="about_desc">ورژن 1.0.0 • محبت کے ساتھ تیار کردہ ♥</string>
+    <string name="output_folder">آؤٹ پٹ فولڈر</string>
+    <string name="output_folder_desc">جہاں پروسیس شدہ فائلیں محفوظ ہوتی ہیں</string>
+    <string name="nav_home">ہوم</string>
+    <string name="nav_recent">حالیہ فائلیں</string>
+    <string name="nav_settings">ترتیبات</string>
+    <string name="app_language">ایپ کی زبان</string>
+    <string name="app_language_desc">اپنی پسندیدہ زبان منتخب کریں</string>
+    <string name="clear_cache">عارضی کیشے صاف کریں</string>
+    <string name="cache_calculating">کیشے: حساب لگایا جا رہا ہے…</string>
+    <string name="help_faq">مدد اور اکثر پوچھے گئے سوالات</string>
+    <string name="help_faq_desc">صارف کے لیے رہنمائی اور سوالات</string>
+</resources>

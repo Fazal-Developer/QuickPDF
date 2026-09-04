@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.QuickPDF" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/textPrimary</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Splash / Launch Theme -->
+    <style name="Theme.QuickPDF.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- AppBar Style -->
+    <style name="Widget.QuickPDF.AppBar" parent="Widget.Design.AppBarLayout">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="Widget.QuickPDF.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">@color/textPrimary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.QuickPDF.Toolbar</item>
+    </style>
+
+    <style name="TextAppearance.QuickPDF.Toolbar" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Tool Card Style -->
+    <style name="Widget.QuickPDF.ToolCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Primary Button — solid purple, large corners, zero insets to prevent text clipping -->
+    <style name="Widget.QuickPDF.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Outlined Button -->
+    <style name="Widget.QuickPDF.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">28dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- FAB Style -->
+    <style name="Widget.QuickPDF.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <!-- Bottom Nav -->
+    <style name="Widget.QuickPDF.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_selector</item>
+    </style>
+
+    <!-- Card style for recent files -->
+    <style name="Widget.QuickPDF.FileCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Section Header Text -->
+    <style name="TextAppearance.QuickPDF.SectionHeader" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Body Text -->
+    <style name="TextAppearance.QuickPDF.Body" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Compression chip style -->
+    <style name="Widget.QuickPDF.CompressChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipCornerRadius">20dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- No action bar variant for PDF viewer -->
+    <style name="Theme.QuickPDF.Viewer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+</resources>

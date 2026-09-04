@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Document outline -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M14,2H6C4.9,2 4.01,2.9 4.01,4L4,20c0,1.1 0.89,2 1.99,2H18c1.1,0 2,-0.9 2,-2V8L14,2zM13,9V3.5L18.5,9H13z"/>
+    <!-- Spreadsheet Grid & X -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,11h10v7H7V11zM8.5,12.5v1.5h3v-1.5H8.5zM12.5,12.5v1.5h3v-1.5H12.5zM8.5,15.5v1.5h3v-1.5H8.5zM12.5,15.5v1.5h3v-1.5H12.5z"/>
+</vector>

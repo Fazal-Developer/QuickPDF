@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Center content -->
+    <LinearLayout
+        android:id="@+id/ll_center_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- App Logo — white card with icon, matches reference exactly -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_splash_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+            <ImageView
+                android:id="@+id/iv_splash_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- App Name — "SWIFT PDF" bold like reference -->
+        <TextView
+            android:id="@+id/tv_splash_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="SWIFT PDF"
+            android:textColor="#2D3436"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.05" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tv_splash_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your smart PDF workspace"
+            android:textColor="#636E72"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Tagline — "Read · Create · Convert · Manage" -->
+        <TextView
+            android:id="@+id/tv_splash_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Read • Create • Convert • Manage"
+            android:textColor="#A0A0A0"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+
+    <!-- Bottom loading area — matches reference with progress bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Progress bar — thin, purple, like reference -->
+        <ProgressBar
+            android:id="@+id/pb_splash_loader"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="160dp"
+            android:layout_height="4dp"
+            android:progress="72"
+            android:max="100"
+            android:progressTint="@color/colorPrimary"
+            android:progressBackgroundTint="#E8E8F0"
+            android:indeterminate="false" />
+
+        <!-- Percentage -->
+        <TextView
+            android:id="@+id/tv_splash_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="72%"
+            android:textColor="#A0A0B0"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+
+</RelativeLayout>
